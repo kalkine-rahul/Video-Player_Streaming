@@ -1,6 +1,6 @@
 ## OTT Video Player – Viewer Experience Demo
 
-This is a **beginner-friendly OTT video player** built with **React + TypeScript** (via Next.js) that focuses on **Viewer Experience (VX)** metrics you’d see in real streaming platforms like **Hotstar** or **Netflix**.
+This is a ** OTT video player** built with **React + TypeScript** (via Next.js) that focuses on **Viewer Experience (VX)** 
 
 It uses the HTML5 `<video>` element with **custom controls** and a small **on-screen metrics dashboard**.
 
@@ -57,13 +57,6 @@ Real OTT platforms track very similar QoE / QoS metrics:
 - **Buffering count & duration** → Rebuffer frequency and ratio, which strongly affect perceived quality  
 - **Errors** → Playback failure rate, often a core KPI (e.g., “plays that fail to start”)  
 - **Watch time** → Session duration / engagement, used for product and performance analysis
-
-This project is intentionally **simplified**:
-
-- No backend
-- No DRM
-- No ABR or bitrate selection logic
-- No analytics pipeline or dashboards like Grafana/Datadog
 
 Instead, it gives you a **small, readable codebase** that shows how these metrics are wired from **video events → React state → UI**, which is exactly the kind of work Viewer Experience / Video Playback engineers do, just at a much larger scale.
 

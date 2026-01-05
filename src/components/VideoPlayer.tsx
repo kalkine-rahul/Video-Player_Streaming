@@ -148,11 +148,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           className="h-full w-full bg-black"
           poster={poster}
           preload="metadata"
-          // playsInline helps on mobile Safari to avoid forced fullscreen.
-          // Some desktop browsers ignore this but it's safe cross-browser.
           playsInline
-          // We use custom controls for a consistent OTT-style UI.
-          // Native controls are disabled for Chrome/Firefox/Edge here.
           controls={false}
           autoPlay={autoPlay}
           onLoadedMetadata={onLoadedMetadata}
@@ -188,7 +184,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   );
 };
 
-// Export metrics type for use in other components
 export type { VideoMetrics } from "@/src/hooks/useVideoMetrics";
 
 

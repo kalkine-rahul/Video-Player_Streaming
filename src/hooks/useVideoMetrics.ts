@@ -59,7 +59,6 @@ export function useVideoMetrics() {
   }, []);
 
   const onLoadStart = useCallback(() => {
-    // Reset startup timing when a new load starts
     internalRef.current.playRequestedAt = null;
     internalRef.current.firstFrameAt = null;
     internalRef.current.hasStartedPlaying = false;
